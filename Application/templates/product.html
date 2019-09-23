@@ -1,0 +1,22 @@
+{% extends 'Application/index1.html' %}
+{% load static %}
+{%block content%}
+<br><br><br><br>
+<div class="row">
+  <div class='col-sm-6'>
+    <img src='{{product.image.url}}' style='width:100%; height:100%;'>
+       </div>
+   <div class='col-sm-4'>
+     <br><br><br>
+    <h4 div class='text-center'>{{product.title}}</h4>
+<p>{{product.description}}</p>
+      <hr>
+      <h2>{{product.price}} сом</h2>
+      <button class='btn btn-danger btn-sm'> Добавить в корзину
+      <div class=bth></div>
+  </div>
+  </div>
+  <br>
+  <br>
+  <br>
+{%endblock content%}
